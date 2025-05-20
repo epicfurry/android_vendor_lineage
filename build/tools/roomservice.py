@@ -50,7 +50,7 @@ if not depsonly:
 repositories = []
 
 if not depsonly:
-    githubreq = urllib.request.Request("https://raw.githubusercontent.com/LineageOS/mirror/main/default.xml")
+    githubreq = urllib.request.Request("https://raw.githubusercontent.com/epicfurry/mirror/main/default.xml")
     try:
         result = ElementTree.fromstring(urllib.request.urlopen(githubreq, timeout=10).read().decode())
     except urllib.error.URLError:
